@@ -32,4 +32,8 @@ export class WorkoutsApiService {
       return this.addWorkout(workout);
     }
   }
+
+  deleteWorkout(id) {
+    return this.http.delete(`${this.baseUrl}/workouts/${id}`);
+  }
 }

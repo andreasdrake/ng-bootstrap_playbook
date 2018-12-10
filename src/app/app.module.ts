@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-//Third party imports
+// Third party imports
 import { NgxLoadingModule } from 'ngx-loading';
+import { NgbModule, NgbDateAdapter } from '@ng-bootstrap/ng-bootstrap';
 
+// App imports
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,7 +15,7 @@ import { EntryEditorComponent } from './entry-editor/entry-editor.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WorkoutsApiService } from './services/workouts-api.service';
-import { FormsModule } from '@angular/forms';
+import { DateStringAdapterService } from './services/date-string-adapter.service';
 
 @NgModule({
   declarations: [
@@ -27,10 +30,14 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     NgxLoadingModule.forRoot({}),
-    FormsModule
+    FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [
-    WorkoutsApiService
+    WorkoutsApiService,
+    {
+      provide: NgbDateAdapter, useClass: DateStringAdapterService
+    }
   ],
   bootstrap: [AppComponent]
 })

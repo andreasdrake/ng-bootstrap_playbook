@@ -49,6 +49,36 @@
       "date": "2018-9-1",
       "distance": "2000",
       "id": 8
+    },
+    {
+      "date": "2018-12-12",
+      "type": "run",
+      "distance": "8765",
+      "id": 9
+    },
+    {
+      "date": "2018-9-20",
+      "type": "row",
+      "distance": "99",
+      "id": 10
+    },
+    {
+      "type": "row",
+      "date": "2018-12-7",
+      "time": {
+        "hour": 2,
+        "minute": 15,
+        "second": 0
+      },
+      "distance": "55",
+      "id": 11
+    },
+    {
+      "rating": 4,
+      "date": "2018-12-7",
+      "type": "run",
+      "distance": "65756",
+      "id": 12
     }
   ],
   "locations": [

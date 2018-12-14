@@ -79,6 +79,19 @@
       "type": "run",
       "distance": "65756",
       "id": 12
+    },
+    {
+      "rating": 4,
+      "location": "Neighborhood 3 mile course",
+      "type": "row",
+      "date": "2018-12-12",
+      "time": {
+        "hour": 3,
+        "minute": 0,
+        "second": 0
+      },
+      "distance": "87678678",
+      "id": 13
     }
   ],
   "locations": [
